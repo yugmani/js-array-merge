@@ -9,9 +9,9 @@
       If speed is critical, you may consider using JavaScript’s spread syntax
       and the Array object’s push method for smaller Arrays.
     </li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>The spread syntax fails to work with larger Arrays. When testing with 100,000 elements, the spread syntax generated a RangeError with the message: Maximum call stack size exceeded. </li>
+    <li>If you need to merge smaller Arrays the spread syntax can help you do this efficiently.</li>
+    <li>For larger Arrays, with more elements, use the concat function.</li>
   </ul>
   <p>
     Source:
